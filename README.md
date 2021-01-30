@@ -1,3 +1,10 @@
+### 欢迎来到小懒猫博客
+
+### 相关文章
+[小懒猫闲聊SDK的module.pyd](https://lazy-cat-xiaolanmao.github.io/chat)
+
+### 主打产品
+
 ### 小懒猫闲聊SDK
 
 ### 这是小懒猫AI推出的闲聊SDK1.0.5版本。这个SDK是pyd文件。
@@ -148,7 +155,7 @@ pyd文件采用cython在windows编译的二进制文件，是无法进行反编�
 
 2.chat.pyd需要requests==2.24(查天气）
 
-下载地址：https://www.python.org/downloads/release/python-386rc1/
+下载地址：[python下载地址](https://www.python.org/downloads/release/python-386rc1/)
 
 2.requests2.24
 
@@ -180,11 +187,11 @@ pyd文件采用cython在windows编译的二进制文件，是无法进行反编�
 
 ### 代码地址：
 
-github地址：https://github.com/Zhou-chengy/pychatbot/
+[github地址](https://github.com/Zhou-chengy/pychatbot/)
 
-gitee地址：https://gitee.com/Zhou-Chengy/pychatbot
+[gitee地址](https://gitee.com/Zhou-Chengy/pychatbot)
 
-gitee地址2：https://gitee.com/Lazy-cat-Xiao
+[gitee地址2](https://gitee.com/Lazy-cat-Xiao/pychatbot)
 
 ### 一般是github先更新
 
