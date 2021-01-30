@@ -1,3 +1,5 @@
+![logo](https://github.com/Lazy-Cat-Xiaolanmao/Lazy-Cat-Xiaolanmao.github.io/tree/main/Lazycat)
+
 ### 欢迎来到小懒猫博客
 
 ### 相关文章
