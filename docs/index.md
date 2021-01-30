@@ -1,6 +1,3 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/Lazy-Cat-Xiaolanmao/Lazy-Cat-Xiaolanmao.github.io/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
 ### 小懒猫闲聊SDK
 
