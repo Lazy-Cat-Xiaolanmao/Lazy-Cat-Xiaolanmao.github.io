@@ -1,8 +1,7 @@
-![logo](https://github.com/Lazy-Cat-Xiaolanmao/Lazy-Cat-Xiaolanmao.github.io/tree/main/Lazycat)
-
 ### 欢迎来到小懒猫博客
 
 ### 相关文章
+
 [小懒猫闲聊SDK的module.pyd](https://lazy-cat-xiaolanmao.github.io/chat)
 
 ### 主打产品
@@ -79,7 +78,7 @@ chat-1.h6:
 
 --问题--(空一格) --答案--(空一格) --相似度--(如1，0.9，0.8，0.7，0.33)（不超过1）
 
-函数
+函数:
 
 训练函数
 
