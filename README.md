@@ -4,7 +4,7 @@
 
 [小懒猫闲聊SDK的module.pyd](https://lazy-cat-xiaolanmao.github.io/chat)
 
-[用小懒猫闲聊SDK中的module.pyd构建闲聊模型](https://lazy-cat-xiaolanmao.github.io/module-use)
+[用小懒猫闲聊SDK中的module.pyd构建闲聊模型](https://lazy-cat-xiaolanmao.github.io/module_use)
 
 ### 主打产品
 
