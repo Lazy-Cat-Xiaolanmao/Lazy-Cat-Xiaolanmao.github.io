@@ -6,6 +6,8 @@
 
 [用小懒猫闲聊SDK中的module.pyd构建闲聊模型](https://lazy-cat-xiaolanmao.github.io/module_use)
 
+[闲聊SDK语料获取方法](https://lazy-cat-xiaolanmao.github.io/chat_corpus)
+
 ### 主打产品
 
 ### 小懒猫闲聊SDK
