@@ -6,42 +6,43 @@
   以腾讯智能闲聊为例，可以搜索智能闲聊。找到腾讯的网页点进去，用QQ账号登录。然后创建应用，接入智能闲聊，记下APPKEY和APPID
   
   然后复制以下代码(APPKEY和APPID替换成你自己的)
-import requests as rq
-import time
-import random
-import string
-import urllib
-import hashlib
+  
+    import requests as rq
+    import time
+    import random
+    import string
+    import urllib
+    import hashlib
 
-APPKEY = 'xxxxxxxxxxx'
-APPID = 123456789 
+    APPKEY = 'xxxxxxxxxxx'
+    APPID = 123456789 
 
-def get_sign(data):
-    lst = [i[0]+'='+urllib.parse.quote_plus(str(i[1])) for i in data.items()]
-    params = '&'.join(sorted(lst))
-    s = params + '&app_key=' + APPKEY
-    h = hashlib.md5(s.encode('utf8'))
-    return h.hexdigest().upper()
+    def get_sign(data):
+        lst = [i[0]+'='+urllib.parse.quote_plus(str(i[1])) for i in data.items()]
+        params = '&'.join(sorted(lst))
+        s = params + '&app_key=' + APPKEY
+        h = hashlib.md5(s.encode('utf8'))
+        return h.hexdigest().upper()
 
 
-def chat(question):    
-    url_chat = 'https://api.ai.qq.com/fcgi-bin/nlp/nlp_textchat'
-    nonce_str = ''.join(random.sample(string.ascii_letters + string.digits, 16))
-    data = {
-        'app_id': APPID,
-        'time_stamp': int(time.time()),
-        'nonce_str': nonce_str,
-        'session': '10000',
-        'question': question,
-    }
-    data['sign'] = get_sign(data)
-    r = rq.post(url_chat, data=data)
-    answer = r.json()['data']['answer']
-    return answer
-while True:
-    i = input()
-    a = chat(i)
-    print(a)
+    def chat(question):    
+        url_chat = 'https://api.ai.qq.com/fcgi-bin/nlp/nlp_textchat'
+        nonce_str = ''.join(random.sample(string.ascii_letters + string.digits, 16))
+        data = {
+           'app_id': APPID,
+           'time_stamp': int(time.time()),
+           'nonce_str': nonce_str,
+           'session': '10000',
+           'question': question,
+        }
+        data['sign'] = get_sign(data)
+        r = rq.post(url_chat, data=data)
+        answer = r.json()['data']['answer']
+        return answer
+    while True:
+        i = input()
+        a = chat(i)
+        print(a)
 
 
 
