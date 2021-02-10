@@ -1,5 +1,9 @@
 ### 欢迎来到小懒猫博客
 
+### 教程
+
+[闲聊SDK使用教程](https://lazy-cat-xiaolanmao.github.io/Learning-course/)
+
 ### 相关文章
 
 [小懒猫闲聊SDK的module.pyd](https://lazy-cat-xiaolanmao.github.io/chat)
@@ -12,7 +16,7 @@
 
 ### 小懒猫闲聊SDK
 
-### 这是小懒猫AI推出的闲聊SDK1.1.0版本。这个SDK是pyd文件。
+### 这是小懒猫AI推出的闲聊SDK1.1.1版本。这个SDK是pyd文件。
 
 ### 使用说明
 
@@ -50,9 +54,9 @@ xibe填机器人的性别
 
 like填机器人的爱好
 
-### module.pyd:
+module.pyd:
 
-### module:
+module:
 
 以下modulename不包括文件后缀.h6
 
@@ -160,27 +164,85 @@ q指问题
 
 这是一个基于module的扩展,可以让聊天机器人不那么傻
 
-示例：
+示例1：
 
     from module import bot
-
+    
     from module import compare
-
-    XXX = bot('XXX')
-
+    
+    from module import module
+    
+    module.train(None,' ','module-tool\chat','module-tool\chat','utf-8')
+    
+    Zhou = bot('Zhou')
+    
+    Zhou.reset()
+    
     while True:
-
+    
         s = input()
+        
+        a = Zhou.bot(s,'小智不能理解','module-tool\chat',',你烦不烦,None)
+        
+        print(a)
+        
+效果：
 
-        a = XXX.bot(None,s,'module-tool\chat','不是说过一遍了',None)
+1次/##########/100%
 
+......
+
+你好
+
+你好
+
+你好
+
+看到你好我都不知道要回什么那就回你好吧，你烦不烦
+
+
+
+示例2(使用tihuan)：
+
+    from module import bot
+    
+    from module import compare
+    
+    from module import module
+    
+    module.train(None,' ','module-tool\chat','module-tool\chat','utf-8')
+    
+    Zhou = bot('Zhou')
+    
+    Zhou.reset()
+    
+    while True:
+    
+        s = input()
+        
+        a = Zhou.bot(s,'小智不能理解','module-tool\chat',None,['你烦不烦','到底你是机器人还是我是机器人'])
+        
         print(a)
 
-        if float(compare(s,'再见'))>=0.7:
+效果：
 
-            XXX.reset()
+1次/##########/100%
 
-            break
+......
+
+你好(问)
+
+你好(答)
+
+你好(问)
+
+你烦不烦(答)
+
+你好(问)
+
+到底你是机器人还是我是机器人(答)
+
+
 
 这里的XXX可以自定义
 
@@ -200,13 +262,13 @@ modulename指模型名（module)
 
 again填再次问一个问题的后缀，不用可填None或False
 
-tihuan填再次问一个问题的替换句，不用可填None或False(注意：again和tihuan必须使用其中一项）
+tihuan填再次问一个问题的替换句，即可为列表(list)或字符串（不用可填None或False(注意：again和tihuan必须使用其中一项）
 
 XXX.reset()
 
 重置机器人
 
-### compare.pyd:
+compare.pyd:
 
 这是一个chat.pyd的依赖项
 
@@ -226,7 +288,7 @@ pyd文件采用cython在windows编译的二进制文件，是无法进行反编�
 
 2.chat.pyd需要requests==2.24(查天气）
 
-下载地址：[python下载地址](https://www.python.org/downloads/release/python-386rc1/)
+下载地址：https://www.python.org/downloads/release/python-386rc1/
 
 2.requests2.24
 
@@ -252,17 +314,12 @@ pyd文件采用cython在windows编译的二进制文件，是无法进行反编�
 
 2.在fork此储存库同时，不能更改README.md文件
 
-                          小懒猫AI 中华人民共和国
-                          
-### 联系邮箱：earuil@outlook.com
+                          小懒猫AI
 
-### 代码地址：
+联系邮箱：earuil@outlook.com
 
-[github地址](https://github.com/Zhou-chengy/pychatbot/)
+gitee地址：https://gitee.com/Zhou-Chengy/pychatbot
 
-[gitee地址](https://gitee.com/Zhou-Chengy/pychatbot)
+gitee地址2：https://gitee.com/Lazy-cat-Xiao
 
-[gitee地址2](https://gitee.com/Lazy-cat-Xiaolanmao/pychatbot)
-
-### 一般是github先更新
-
+一般是github先更新
