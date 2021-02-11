@@ -318,8 +318,12 @@ pyd文件采用cython在windows编译的二进制文件，是无法进行反编�
 
 联系邮箱：earuil@outlook.com
 
-gitee地址：https://gitee.com/Zhou-Chengy/pychatbot
+github地址：[github](https://github.com/Zhou-chengy/pychatbot/)
 
-gitee地址2：https://gitee.com/Lazy-cat-Xiao
+gitee地址：[gitee](https://gitee.com/Zhou-Chengy/pychatbot)
 
-一般是github先更新
+gitee地址2：[gitee2](https://gitee.com/Lazy-cat-Xiao)
+
+### 一般是github先更新
+
+### 请各位用户关注github动态
